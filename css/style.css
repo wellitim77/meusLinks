@@ -1,0 +1,120 @@
+:root{
+   --red: #dc4266;
+   --blue: #3072e6;
+   --background: #00032c;
+   --white: #ffffff;
+
+   --profile-photo: 120px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--background);
+    color: var(--white);
+
+}
+
+main{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 15px; /* aqui dar o espacamento dentro */
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.photo-container{
+    width: var(--profile-photo);
+    height: var(--profile-photo);
+    
+}
+
+.profile-photo{
+    width: var(--profile-photo);
+    border-radius: 50%;
+    border: 3px solid var(--blue)
+}
+
+h1{
+    color: var(--red);
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.ocupation{
+    margin-top: 5px;
+}
+
+section{
+    margin-top: 30px;
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+}
+
+.links{
+    background: var(--red);
+    color: var(--white);
+    width: 100%;
+
+    height: 50px;
+    max-width: 270px;
+    text-decoration: none;
+
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+}
+
+.links:hover{
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
+
+.links:first-child{
+    margin-top: 0;
+}
+
+.links i{
+    margin-right: 10px;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.call-me{
+    text-align: center;
+
+}
+
+footer i{
+    margin: 15px;
+    color: var(--blue);
+}
+
